@@ -10,10 +10,25 @@ public class ClassWork {
         float floatValue = 36.6f; //
         double doubleValue = 36.6666666;
 
-        char charValue = (char) 65000; // 2 байта
-        boolean booleanValue = true; // 1 байт
+        char charValue = '5'; // 2 байта
+        boolean booleanValue = false; // 1 байт
 
-        System.out.println(charValue);
+        int countDown = 10;
 
+        while (countDown >= 0) { // пока выполняется условие в скобках - выполняется тело цикла
+            System.out.println(countDown);
+            countDown = countDown - 1; // уменьшаем countDown на 1;   эквивалентно countDown--;
+        }
+
+        System.out.println("--------------");
+
+        int count = 0;
+        while (true) {
+            if (count == 3) {
+                break;
+            }
+            System.out.println(count);
+            count++;
+        }
     }
 }
