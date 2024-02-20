@@ -19,16 +19,27 @@ public class ClassWork {
             System.out.println(countDown);
             countDown = countDown - 1; // уменьшаем countDown на 1;   эквивалентно countDown--;
         }
+        System.out.println("Поехали");
 
         System.out.println("--------------");
 
         int count = 0;
-        while (true) {
-            if (count == 3) {
-                break;
+        while (true) {              //создаём бесконечный цикл
+            if (count == 3) {       //создаём условие для выхода из цикла
+                break;              // оператов выхода из цикла
             }
             System.out.println(count);
-            count++;
+            count++;                // увеличиваем count на 1;   эквивалентно count = count + 1;
         }
+
+        System.out.println("------------------");
+
+        int count1 = 0;
+
+        do {                                // пример цикла do-while
+            System.out.println(count1);     // сначала выполняется тело цикла
+            count1++;
+        } while (count1 < 11);              // затем проверяется условие
+
     }
 }
