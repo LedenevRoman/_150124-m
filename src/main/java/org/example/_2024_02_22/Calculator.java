@@ -1,8 +1,26 @@
 package org.example._2024_02_22;
 
+import java.util.Scanner;
+
 public class Calculator {
     public static void main(String[] args) {
+        double num1 = getNumber();
+        double num2 = getNumber();
+        char operation = getOperation();
+        double result = calculate(num1, operation, num2);
+        System.out.println(result);
+    }
 
+    public static double getNumber() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter number");
+        return scanner.nextDouble();
+    }
+
+    public static char getOperation() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter operation:");
+        return scanner.next().charAt(0);
     }
 
     public static double calculate(double num1, char operation, double num2) {
