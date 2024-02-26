@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         double num1 = getNumber();
-        double num2 = getNumber();
         char operation = getOperation();
+        double num2 = getNumber();
         double result = calculate(num1, operation, num2);
         System.out.println(result);
     }

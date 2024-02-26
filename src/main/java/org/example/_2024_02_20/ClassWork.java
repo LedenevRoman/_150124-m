@@ -1,5 +1,7 @@
 package org.example._2024_02_20;
 
+import java.util.ArrayList;
+
 public class ClassWork {
     public static void main(String[] args) {
         byte byteValue = 10; // (-128 +127) 2^8
@@ -45,6 +47,8 @@ public class ClassWork {
             System.out.println(i);
         }
 
+        Object o = 10;
+        System.out.println(o.getClass().equals(Number.class));
 
     }
 }
