@@ -3,18 +3,26 @@ package org.example._2024_02_26;
 public class LocalExample {
     public static void main(String[] args) {
         int someInt = 100;                      // локальная переменная метода main
-        if (someInt == 200) {
+        if (someInt == 100) {
             byte someByte = 5;                  // локальная переменная блока if
             System.out.println(someInt);
             System.out.println(someByte);
+            char someChar = '0';
             for (int i = 0; i < 10; i++) {
-                char someChar = '1';            // локальная переменная блока for внутри блока if
+                someChar = '8';                 // локальная переменная блока for внутри блока if
                 System.out.println(someInt);
                 System.out.println(someByte);
                 System.out.println(someChar);
             }
-            char someChar = '6';
-        }
 
+            System.out.println(someChar);
+        }
+        byte someByte = 5;
+    }
+
+    public static void someMethod() {
+        int someInt = 100;
+        byte someByte = 5;
+        char someChar = '6';
     }
 }
