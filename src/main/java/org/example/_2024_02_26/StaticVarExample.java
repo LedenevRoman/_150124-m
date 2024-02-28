@@ -6,6 +6,13 @@ public class StaticVarExample {
         Student anton = new Student(25 ,"Anton");
         oleg.groupName = "150124-m";
 
+        int a = 1;
+        int b = 2;
+        int c = 3;
+
+        System.out.printf("Number %d -> %d, %d %n", a, b, c);
+
+
         Student michail = new Student(40, "Michail");
         System.out.println(oleg.groupName);
         System.out.println(anton.groupName);
