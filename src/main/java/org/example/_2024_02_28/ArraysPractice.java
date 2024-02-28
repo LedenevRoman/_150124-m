@@ -28,12 +28,7 @@ public class ArraysPractice {
         Arrays.sort(strings);
         System.out.println(Arrays.toString(strings));
 
-        int a = 100;
-        int b = 100;
-
-        System.out.println(array2);
-        System.out.println(array6);
-        System.out.println(array2 == array6);
+        System.out.println(array2 == array6);                   // сравнивает ссылки
         System.out.println(Arrays.equals(array2, array6));    // метод equals сравнивает массивы по их содержимому
 
         System.out.println(Arrays.binarySearch(array5, 6));   // метод binarySearch выводит индекс искомого элемента в отсортированном массиве
